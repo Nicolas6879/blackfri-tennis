@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZAP / ARCHIVE — Calzado Seleccionado · Colombia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER ÚNICO Y MINIMALISTA (ESTILO KITH / ADIDAS ORIGINALS / NIKE) -->
+  <header class="archive-header">
+    <div class="header-wrap">
+      <!-- Marca -->
+      <div class="archive-brand">
+        <a href="#" class="brand-wordmark" id="btnLogoReset">ZAP<span>/</span>ARCHIVE</a>
+        <span class="brand-meta">CO · TALLAS 41–44 (10–11 US)</span>
+      </div>
+
+      <!-- Categorías centrales en texto limpio (Sin cajas pesadas) -->
+      <nav class="archive-nav" id="categoryTabs" aria-label="Categorías">
+        <button class="nav-tab active" data-cat="ALL">
+          <span>Todo</span>
+          <sup id="countAll">216</sup>
+        </button>
+        <button class="nav-tab" data-cat="A">
+          <span>Futuristas &amp; Color</span>
+          <sup id="countA">47</sup>
+        </button>
+        <button class="nav-tab" data-cat="B">
+          <span>Fácil Limpieza</span>
+          <sup id="countB">90</sup>
+        </button>
+        <button class="nav-tab" data-cat="C">
+          <span>Máximo Confort</span>
+          <sup id="countC">79</sup>
+        </button>
+      </nav>
+
+      <!-- Utilidades derechas discretas -->
+      <div class="archive-utils">
+        <div class="inline-search">
+          <svg class="ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="searchInput" placeholder="Buscar silueta o marca..." />
+        </div>
+
+        <button class="util-link" id="btnShowLiked" title="Ver guardados">
+          <svg class="ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span>Guardados</span>
+          <strong id="likedCountBadge">0</strong>
+        </button>
+
+        <button class="util-link" id="btnExportLiked" title="Exportar lista">
+          <span>Lista</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- BARRA EDITORIAL ÚNICA: MARCAS A LA IZQUIERDA · FILTROS Y ORDEN A LA DERECHA -->
+  <section class="sub-bar">
+    <div class="sub-bar-wrap">
+      <!-- Cinta horizontal minimalista de marcas -->
+      <div class="brand-strip" id="brandQuickDock" aria-label="Filtrar por marca"></div>
+
+      <!-- Controles limpios a la derecha -->
+      <div class="sub-bar-controls">
+        <span class="results-meta" id="resultsCountText">216 pares</span>
+
+        <button class="control-trigger" id="btnToggleFilters">
+          <svg class="ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/><circle cx="8" cy="6" r="2" fill="currentColor"/><circle cx="16" cy="12" r="2" fill="currentColor"/><circle cx="10" cy="18" r="2" fill="currentColor"/></svg>
+          <span>Filtros</span>
+          <span class="filter-count-dot" id="activeFiltersBadge" style="display:none">0</span>
+        </button>
+
+        <div class="sort-wrap">
+          <select id="sortSelect" class="minimal-select" aria-label="Ordenar por">
+            <option value="discount-desc">Ordenar: Mayor descuento</option>
+            <option value="savings-desc">Ordenar: Mayor ahorro ($)</option>
+            <option value="price-asc">Precio: Menor a mayor</option>
+            <option value="price-desc">Precio: Mayor a menor</option>
+            <option value="comfort-desc">Nivel de confort</option>
+          </select>
+        </div>
+
+        <div class="grid-toggle" role="group" aria-label="Columnas">
+          <button class="grid-btn active" id="btnViewComfort" title="3 columnas">3</button>
+          <button class="grid-btn" id="btnViewCompact" title="4 columnas">4</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DRAWER DE FILTROS (TODO EL PODER PERO OCULTO HASTA QUE LO NECESITES) -->
+  <div class="drawer-backdrop" id="filterDrawerBackdrop"></div>
+  <aside class="filter-drawer" id="filterSidebar" aria-label="Filtros">
+    <div class="drawer-header">
+      <h3>Filtros &amp; Preferencias</h3>
+      <button class="btn-close-icon" id="btnCloseFilters" aria-label="Cerrar">
+        <svg class="ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <div class="drawer-content">
+      <!-- Colecciones rápidas dentro del panel para no saturar la cabecera -->
+      <div class="filter-block">
+        <h4>Colecciones Rápidas</h4>
+        <div class="drawer-vibes" id="vibePresetsBar">
+          <button class="vibe-option active" data-vibe="all">Todos los modelos</button>
+          <button class="vibe-option" data-vibe="cloud">Sensación Nube / Podólogos</button>
+          <button class="vibe-option" data-vibe="steals">Descuentos -45% a -60%</button>
+          <button class="vibe-option" data-vibe="rain">Impermeables (Gore-Tex / OutDry)</button>
+          <button class="vibe-option" data-vibe="sculpt">Suelas Escultóricas &amp; Futuristas</button>
+          <button class="vibe-option" data-vibe="amazon">Amazon Prime CO (&lt;$200 USD)</button>
+        </div>
+      </div>
+
+      <div class="filter-block">
+        <div class="filter-block-head">
+          <h4>Precio máximo</h4>
+          <span class="mono-val" id="priceRangeLabel">Hasta $950.000 COP</span>
+        </div>
+        <input type="range" id="priceMaxRange" min="150000" max="950000" step="25000" value="950000" />
+      </div>
+
+      <div class="filter-block">
+        <h4>Verificación y Atributos</h4>
+        <div class="check-list">
+          <label class="check-item"><input type="checkbox" id="verifiedOnly" checked /> <span>Solo stock y talla verificados hoy (216)</span></label>
+          <label class="check-item"><input type="checkbox" id="filterWaterproof" /> <span>Solo impermeables (Gore-Tex / OutDry)</span></label>
+          <label class="check-item"><input type="checkbox" id="filterFreeShipping" /> <span>Solo envío gratis a Colombia</span></label>
+          <label class="check-item"><input type="checkbox" id="filterBigDiscount" /> <span>Solo descuentos de 35% o más</span></label>
+        </div>
+      </div>
+
+      <div class="filter-block">
+        <h4>Tiendas Oficiales</h4>
+        <div class="check-list" id="storeFilters">
+          <label class="check-item"><input type="checkbox" value="Amazon" checked /> <span>Amazon.com (Envío gratis CO &lt;$200 USD)</span></label>
+          <label class="check-item"><input type="checkbox" value="Dafiti Colombia" checked /> <span>Dafiti Colombia</span></label>
+          <label class="check-item"><input type="checkbox" value="Mercado Libre CO" checked /> <span>Mercado Libre CO (Tiendas Oficiales)</span></label>
+          <label class="check-item"><input type="checkbox" value="ASICS Colombia" checked /> <span>ASICS.com.co Oficial</span></label>
+          <label class="check-item"><input type="checkbox" value="Nike Colombia" checked /> <span>Nike.com.co Oficial</span></label>
+          <label class="check-item"><input type="checkbox" value="Reebok Colombia" checked /> <span>Reebok.co Oficial</span></label>
+          <label class="check-item"><input type="checkbox" value="Falabella CO" checked /> <span>Adidas / Under Armour / Columbia / Falabella CO</span></label>
+        </div>
+      </div>
+
+      <div class="filter-block">
+        <div class="filter-block-head">
+          <h4>Marcas</h4>
+          <div class="text-actions">
+            <button type="button" id="btnSelectAllBrands">Todas</button>
+            <span>/</span>
+            <button type="button" id="btnClearBrands">Ninguna</button>
+          </div>
+        </div>
+        <div class="check-list two-cols" id="brandFilters">
+          <label class="check-item"><input type="checkbox" value="ASICS" checked /> <span>ASICS</span></label>
+          <label class="check-item"><input type="checkbox" value="Adidas" checked /> <span>Adidas</span></label>
+          <label class="check-item"><input type="checkbox" value="Adidas Originals" checked /> <span>Adidas Originals</span></label>
+          <label class="check-item"><input type="checkbox" value="Adidas Performance" checked /> <span>Adidas Performance</span></label>
+          <label class="check-item"><input type="checkbox" value="Reebok" checked /> <span>Reebok</span></label>
+          <label class="check-item"><input type="checkbox" value="Nike" checked /> <span>Nike</span></label>
+          <label class="check-item"><input type="checkbox" value="New Balance" checked /> <span>New Balance</span></label>
+          <label class="check-item"><input type="checkbox" value="Vans" checked /> <span>Vans</span></label>
+          <label class="check-item"><input type="checkbox" value="Skechers" checked /> <span>Skechers</span></label>
+          <label class="check-item"><input type="checkbox" value="Under Armour" checked /> <span>Under Armour</span></label>
+          <label class="check-item"><input type="checkbox" value="Nautica" checked /> <span>Nautica</span></label>
+          <label class="check-item"><input type="checkbox" value="Merrell" checked /> <span>Merrell</span></label>
+          <label class="check-item"><input type="checkbox" value="HOKA" checked /> <span>HOKA</span></label>
+          <label class="check-item"><input type="checkbox" value="Columbia" checked /> <span>Columbia</span></label>
+          <label class="check-item"><input type="checkbox" value="Altra" checked /> <span>Altra</span></label>
+          <label class="check-item"><input type="checkbox" value="Brooks" checked /> <span>Brooks</span></label>
+          <label class="check-item"><input type="checkbox" value="Mizuno" checked /> <span>Mizuno</span></label>
+          <label class="check-item"><input type="checkbox" value="PUMA" checked /> <span>PUMA</span></label>
+          <label class="check-item"><input type="checkbox" value="Saucony" checked /> <span>Saucony</span></label>
+          <label class="check-item"><input type="checkbox" value="Salomon" checked /> <span>Salomon</span></label>
+        </div>
+      </div>
+
+      <div class="filter-block">
+        <div class="filter-block-head">
+          <h4>Tasa TRM (USD a COP)</h4>
+          <input type="number" id="trmInput" class="trm-drawer-input" value="3592" min="2500" max="6000" step="10" />
+        </div>
+        <div style="margin-top:10px;">
+          <button type="button" class="text-link-muted" id="btnShowDiscarded">
+            Ver modelos ocultos (<span id="discardedCountBadge">0</span>)
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <button class="btn-reset-all" id="btnResetFilters">Restablecer todo</button>
+    </div>
+  </aside>
+
+  <!-- GRILLA EDITORIAL PRINCIPAL (ESTILO NIKE / ADIDAS ORIGINALS / KITH) -->
+  <main class="gallery-main">
+    <div class="products-grid" id="productsGrid"></div>
+
+    <div class="empty-view" id="emptyState" style="display:none;">
+      <div class="empty-box">
+        <h3>Sin resultados para este filtro</h3>
+        <p>Prueba seleccionando otra marca o restableciendo los filtros.</p>
+        <button class="btn-solid-dark" id="btnEmptyReset">Ver los 216 pares</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- DOCK FLOTANTE DE COMPARACIÓN (SOLO VISIBLE AL ELEGIR 'VS') -->
+  <div class="compare-dock" id="compareBar" style="display:none;">
+    <div class="compare-dock-inner">
+      <span class="compare-label">Comparar (<strong id="compareCount">0</strong>/3)</span>
+      <div class="compare-slots" id="compareThumbs"></div>
+      <button class="btn-cmp-clear" id="btnClearCompare">Limpiar</button>
+      <button class="btn-cmp-open" id="btnOpenCompare">Ver comparativa</button>
+    </div>
+  </div>
+
+  <!-- MODAL COMPARADOR -->
+  <div class="modal-overlay" id="compareModal" style="display:none;">
+    <div class="modal-box modal-box-wide">
+      <div class="modal-head">
+        <h2>Comparativa Cara a Cara</h2>
+        <button class="btn-close-icon" id="btnCloseCompareModal" aria-label="Cerrar">
+          <svg class="ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div id="compareTableWrap"></div>
+    </div>
+  </div>
+
+  <!-- MODAL DE FICHA DE PRODUCTO (AQUÍ VIVE LA DESCRIPCIÓN COMPLETA Y ESPECIFICACIONES) -->
+  <div class="modal-overlay" id="quickViewModal" style="display:none;">
+    <div class="modal-box modal-box-detail">
+      <button class="btn-close-icon modal-close-float" id="btnCloseQuickView" aria-label="Cerrar">
+        <svg class="ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div class="detail-grid">
+        <div class="detail-visual">
+          <div class="detail-pedestal">
+            <span class="detail-badge-off" id="qvDiscount">-40%</span>
+            <img id="qvImage" src="" alt="" />
+          </div>
+          <div class="detail-pager">
+            <button class="pager-btn" id="qvPrevBtn">← Anterior</button>
+            <span class="pager-hint">Teclas ← / →</span>
+            <button class="pager-btn" id="qvNextBtn">Siguiente →</button>
+          </div>
+        </div>
+
+        <div class="detail-copy">
+          <div class="detail-eyebrow">
+            <span id="qvBrand">MARCA</span>
+            <span>·</span>
+            <span id="qvCatBadge">Categoría</span>
+          </div>
+          <h2 class="detail-name" id="qvTitle">Modelo</h2>
+          <p class="detail-description" id="qvDesc">Descripción</p>
+
+          <div class="detail-pricing" id="qvPriceBox"></div>
+          <div class="detail-specs" id="qvSpecsGrid"></div>
+
+          <div class="detail-actions">
+            <button class="btn-outline-dark" id="qvLikeBtn">Guardar</button>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-solid-dark" id="qvBuyLink">
+              <span>Comprar en Tienda Oficial</span>
+              <svg class="ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DE GUARDADOS / LISTA -->
+  <div class="modal-overlay" id="exportModal" style="display:none;">
+    <div class="modal-box">
+      <div class="modal-head">
+        <h2>Pares Guardados</h2>
+        <button class="btn-close-icon" id="btnCloseModal" aria-label="Cerrar">
+          <svg class="ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="saved-list" id="exportModalBody"></div>
+      <div class="modal-foot">
+        <button class="btn-outline-dark" id="btnCopyClipboard">Copiar links</button>
+        <button class="btn-solid-dark" id="btnDownloadTxt">Descargar .TXT</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="archive-footer">
+    <p>ZAP / ARCHIVE — Curaduría verificada en tallas 41–44 CO (10–11 US) · Envío directo a Colombia.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
