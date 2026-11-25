@@ -1290,6 +1290,8 @@ body {
 @media (max-width: 1120px) {
   .products-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 18px;
+    row-gap: 32px;
   }
   .products-grid.compact-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1298,20 +1300,344 @@ body {
     height: auto;
     padding: 12px 20px;
     flex-wrap: wrap;
+    gap: 12px;
+  }
+  .gallery-main {
+    padding: 22px 20px 80px;
+  }
+  .sub-bar-wrap {
+    padding: 10px 20px;
   }
 }
 
-@media (max-width: 720px) {
-  .products-grid,
-  .products-grid.compact-grid {
-    grid-template-columns: 1fr;
+/* ==========================================================================
+   RESPONSIVE MÓVIL PREMIUM (ESTILO NIKE / ADIDAS ORIGINALS / STOCKX MOBILE)
+   - Header compacto con buscador y tabs deslizables en horizontal (touch-scroll)
+   - Grilla móvil nativa de 2 columnas (o 1 columna amplia con el botón 3/4)
+   - Modales tipo Bottom-Sheet en celular con soporte safe-area
+   ========================================================================== */
+@media (max-width: 768px) {
+  .header-wrap {
+    padding: 10px 14px 6px;
+    gap: 8px;
   }
-  .detail-grid {
-    grid-template-columns: 1fr;
+
+  .archive-brand {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  .brand-wordmark {
+    font-size: 1.05rem;
+  }
+
+  .brand-meta {
+    font-size: 0.65rem;
+  }
+
+  /* Buscador + Guardados + Lista en una fila compacta */
+  .archive-utils {
+    width: 100%;
+    order: 2;
+    gap: 8px;
+    justify-content: space-between;
+  }
+
+  .inline-search {
+    flex: 1;
+    width: auto;
+    padding: 7px 12px;
+  }
+
+  .inline-search:focus-within {
+    width: auto;
+  }
+
+  .inline-search input {
+    font-size: 16px; /* Evita auto-zoom en iOS Safari */
+  }
+
+  .util-link {
+    padding: 6px 8px;
+    font-size: 0.78rem;
+    background: rgba(18, 18, 18, 0.045);
+    border-radius: 999px;
+  }
+
+  /* Tabs de categorías deslizables horizontalmente sin romper líneas */
+  .archive-nav {
+    width: calc(100% + 28px);
+    margin: 2px -14px 0;
+    padding: 0 14px;
+    order: 3;
+    gap: 18px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    border-top: 1px solid var(--line-hairline);
+    height: 40px;
+  }
+
+  .archive-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-tab {
+    font-size: 0.8rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+    height: 40px;
+  }
+
+  /* Sub-barra móvil: marcas arriba en scroll horizontal + barra de filtros compacta */
   .sub-bar-wrap {
     flex-direction: column;
     align-items: stretch;
-    padding: 10px 20px;
+    padding: 8px 14px;
+    gap: 8px;
+  }
+
+  .brand-strip {
+    margin: 0 -14px;
+    padding: 0 14px 4px;
+  }
+
+  .brand-chip {
+    padding: 5px 11px;
+    font-size: 0.76rem;
+  }
+
+  .sub-bar-controls {
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+    padding-top: 6px;
+    border-top: 1px solid var(--line-hairline);
+  }
+
+  .results-meta {
+    font-size: 0.71rem;
+  }
+
+  .control-trigger {
+    padding: 5px 11px;
+    font-size: 0.76rem;
+  }
+
+  .minimal-select {
+    font-size: 0.75rem;
+    max-width: 155px;
+    text-overflow: ellipsis;
+  }
+
+  .grid-toggle {
+    display: none;
+  }
+
+  /* Galería en celular: 2 columnas tipo StockX / Nike App para explorar rápido */
+  .gallery-main {
+    padding: 14px 12px 90px;
+  }
+
+  .products-grid,
+  .products-grid.compact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 10px;
+    row-gap: 24px;
+  }
+
+  .card-image-wrap {
+    aspect-ratio: 1 / 1;
+    padding: 14px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
+
+  .product-img {
+    width: 92%;
+    height: 92%;
+  }
+
+  .stage-top-bar {
+    top: 8px;
+    left: 8px;
+    right: 6px;
+  }
+
+  .discount-tag {
+    font-size: 0.66rem;
+    padding: 2px 6px;
+  }
+
+  /* En pantallas táctiles no hay hover: mostrar botón de favorito y VS discretos */
+  .icon-btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  .icon-btn.compare-btn {
+    opacity: 0.75;
+    font-size: 0.58rem;
+  }
+
+  .icon-btn.discard-btn {
+    display: none;
+  }
+
+  .stage-waterproof {
+    bottom: 6px;
+    left: 8px;
+    font-size: 0.58rem;
+    padding: 1px 5px;
+  }
+
+  .card-eyebrow {
+    font-size: 0.66rem;
+  }
+
+  .card-brand {
+    font-size: 0.66rem;
+  }
+
+  .card-category {
+    display: none; /* Ahorra espacio horizontal en 2 columnas móviles */
+  }
+
+  .eyebrow-dot {
+    display: none;
+  }
+
+  .card-store {
+    font-size: 0.63rem;
+  }
+
+  .card-title {
+    font-size: 0.82rem;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.28;
+    min-height: 2.1rem;
+  }
+
+  .card-price-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+    margin-top: 2px;
+  }
+
+  .price-cluster {
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .price-current {
+    font-size: 0.88rem;
+  }
+
+  .price-regular {
+    font-size: 0.68rem;
+  }
+
+  .price-usd {
+    font-size: 0.65rem;
+  }
+
+  .card-bottom-row {
+    margin-top: 4px;
+    padding-top: 5px;
+    gap: 4px;
+  }
+
+  .sizes-line {
+    font-size: 0.64rem;
+  }
+
+  .store-link-direct {
+    font-size: 0.68rem;
+    opacity: 1;
+  }
+
+  /* Modales en celular como Bottom Sheet cómodo a una mano */
+  .modal-overlay {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .modal-box,
+  .modal-box-detail,
+  .modal-box-wide {
+    max-width: 100%;
+    max-height: 92vh;
+    border-radius: 18px 18px 0 0;
+    padding: 20px 16px calc(24px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .detail-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .detail-pedestal {
+    height: 240px;
+    padding: 20px;
+  }
+
+  .detail-pedestal img {
+    max-height: 200px;
+  }
+
+  .detail-name {
+    font-size: 1.18rem;
+  }
+
+  .detail-description {
+    font-size: 0.83rem;
+  }
+
+  .detail-specs {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .detail-actions {
+    position: sticky;
+    bottom: 0;
+    background: var(--bg-canvas);
+    padding-top: 10px;
+  }
+
+  /* Dock comparador adaptado a móvil */
+  .compare-dock {
+    bottom: 14px;
+    width: calc(100% - 24px);
+    max-width: 420px;
+    padding: 8px 14px;
+  }
+
+  .compare-dock-inner {
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 0.74rem;
+  }
+
+  .compare-thumb-pill span {
+    display: none;
+  }
+
+  /* Drawer de filtros a pantalla completa en móvil */
+  .filter-drawer {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Pantallas muy pequeñas (<360px) */
+@media (max-width: 359px) {
+  .products-grid,
+  .products-grid.compact-grid {
+    grid-template-columns: 1fr;
   }
 }
