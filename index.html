@@ -30,19 +30,23 @@
       <nav class="archive-nav" id="categoryTabs" aria-label="Categorías">
         <button class="nav-tab active" data-cat="ALL">
           <span>Todo</span>
-          <sup id="countAll">216</sup>
+          <sup id="countAll">223</sup>
         </button>
         <button class="nav-tab" data-cat="A">
           <span>Futuristas &amp; Color</span>
-          <sup id="countA">47</sup>
+          <sup id="countA">69</sup>
         </button>
         <button class="nav-tab" data-cat="B">
           <span>Fácil Limpieza</span>
-          <sup id="countB">90</sup>
+          <sup id="countB">88</sup>
         </button>
         <button class="nav-tab" data-cat="C">
           <span>Máximo Confort</span>
-          <sup id="countC">79</sup>
+          <sup id="countC">66</sup>
+        </button>
+        <button class="nav-tab nav-tab-expired" data-cat="EXPIRED">
+          <span>Agotados / Sin dto.</span>
+          <sup id="countExpired">17</sup>
         </button>
       </nav>
 
@@ -208,6 +212,10 @@
 
   <!-- GRILLA EDITORIAL PRINCIPAL (ESTILO NIKE / ADIDAS ORIGINALS / KITH) -->
   <main class="gallery-main">
+    <div class="expired-banner" id="expiredBanner" style="display:none;">
+      <p><strong>Archivo de Agotados y Sin Descuento:</strong> Estos modelos se agotaron en tus tallas (41–44 CO / 10–11 US) o volvieron a precio regular en la última revisión en vivo. Los conservamos aquí por si vuelven a bajar.</p>
+      <button class="control-trigger" id="btnBackActiveFromExpired">Volver a ofertas activas</button>
+    </div>
     <div class="products-grid" id="productsGrid"></div>
 
     <div class="empty-view" id="emptyState" style="display:none;">

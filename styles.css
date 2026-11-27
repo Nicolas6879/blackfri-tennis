@@ -167,6 +167,86 @@ body {
   color: var(--ink-black);
 }
 
+.nav-tab-expired {
+  color: var(--ink-subtle);
+}
+
+.nav-tab-expired.active {
+  color: var(--accent-sale);
+}
+
+.nav-tab-expired.active::after {
+  background: var(--accent-sale);
+}
+
+/* Tarjetas en la sección Agotados / Sin descuento */
+.product-card.is-expired .card-image-wrap {
+  background-color: #E5E3DD;
+}
+
+.product-card.is-expired .product-img {
+  opacity: 0.58;
+  filter: grayscale(0.45) brightness(1.06) contrast(1.05);
+}
+
+.product-card.is-expired:hover .product-img {
+  opacity: 0.85;
+  filter: grayscale(0.15) brightness(1.06) contrast(1.06);
+}
+
+.status-tag-expired {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  background: #525252;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.status-tag-nodisc {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #92400E;
+  background: #FEF3C7;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.expired-reason-line {
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  margin-top: 2px;
+  line-height: 1.35;
+}
+
+.expired-banner {
+  margin-bottom: 22px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  background: #ECEAE3;
+  border: 1px solid var(--line-strong);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.expired-banner p {
+  font-size: 0.83rem;
+  color: var(--ink-dark);
+}
+
+.expired-banner strong {
+  color: var(--ink-black);
+}
+
 /* Utilidades derechas del header */
 .archive-utils {
   display: flex;
