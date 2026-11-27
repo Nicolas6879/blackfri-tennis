@@ -1,4 +1,4 @@
-// Catálogo ZAP / ARCHIVE — Auditado en vivo el 2026-11-27
+// Catálogo ZAP / ARCHIVE — Hombre (41–44 CO) + Mujer Chunky (35–38 CO) · Auditado 2026-11-27
 const PRODUCTS = [
   {
     "id": "ver-halo-daf-un070shyd5i7co",
@@ -8617,6 +8617,949 @@ const PRODUCTS = [
     "fitTip": "Primeknit se amolda a empeines altos sin presionar; talla fiel 10.5 - 11 US.",
     "desc": "40% OFF directo en Adidas Colombia. Su capellada tipo media y su enorme cama de Light BOOST entregan rebote y suavidad todo el día.",
     "dealStatus": "reference"
+  },
+  {
+    "id": "ver-wmn-fi067shybzwrco",
+    "brand": "FILA",
+    "name": "Tenis Mujer Lifestyle FILA Disruptor 2 Marfil",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 166900,
+    "regularPrice": 299000,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-FILA-Disruptor-2-Marfil-2799476.html",
+    "image": "imagenes/ver-wmn-fi067shybzwrco.jpg",
+    "materials": "Cuero sintético marfil fácil de limpiar + Plataforma dentada EVA",
+    "waterproof": false,
+    "freeShipping": false,
+    "comfortScore": 8,
+    "easyCleanScore": 8,
+    "desc": "El ícono chunky / dad-shoe por excelencia en tono marfil: suela dentada de plataforma alta, estética moda urbana (nada deportiva) y súper combinable con outfits casuales.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 35.5 CO, 38 CO"
+  },
+  {
+    "id": "ver-wmn-3514",
+    "brand": "ASICS",
+    "name": "Tenis ASICS Japan S Pf - Blanco",
+    "category": "W",
+    "gender": "women",
+    "store": "ASICS.com.co (Oficial)",
+    "storeName": "ASICS.com.co (Oficial)",
+    "currency": "COP",
+    "salePrice": 184975,
+    "regularPrice": 369950,
+    "url": "https://www.asics.com.co/1202a024-137/p",
+    "image": "imagenes/ver-wmn-3514.jpg",
+    "materials": "Cuero sintético blanco + Plataforma ligera EVA",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 8,
+    "easyCleanScore": 8,
+    "desc": "Plataforma limpia (PF) en blanco versátil: perfil elevado de moda urbana que combina fácilmente con prendas no deportivas.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 5 US, 6 US, 6.5 US, 7 US, 7.5 US"
+  },
+  {
+    "id": "ver-wmn-ne185shyb5ysco",
+    "brand": "New Balance",
+    "name": "Tenis Mujer Lifestyle new balance 9060 Taupe",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 578900,
+    "regularPrice": 964900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-new-balance-9060-Taupe-2833099.html",
+    "image": "imagenes/ver-wmn-ne185shyb5ysco.jpg",
+    "materials": "Gamuza suave + Malla transpirable + Mediasuela chunky ABZORB",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 10,
+    "easyCleanScore": 8,
+    "desc": "Silueta chunky escultórica estilo Balenciaga Triple S: mediasuela voluminosa de doble densidad ABZORB + SBS, ultra cómoda y perfecta para elevar jeans, pantalones sastre o looks casuales en tono neutro.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 35 CO, 36.5 CO"
+  },
+  {
+    "id": "ver-wmn-ne185shybircco",
+    "brand": "New Balance",
+    "name": "Tenis Mujer Lifestyle new balance 9060 Beige",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 569900,
+    "regularPrice": 949900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-new-balance-9060-Beige-2821703.html",
+    "image": "imagenes/ver-wmn-ne185shybircco.jpg",
+    "materials": "Gamuza suave + Malla transpirable + Mediasuela chunky ABZORB",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 10,
+    "easyCleanScore": 8,
+    "desc": "Silueta chunky escultórica estilo Balenciaga Triple S: mediasuela voluminosa de doble densidad ABZORB + SBS, ultra cómoda y perfecta para elevar jeans, pantalones sastre o looks casuales en tono neutro.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 35 CO, 35.5 CO, 38 CO, 5 US"
+  },
+  {
+    "id": "ver-wmn-ne185shyb5z1co",
+    "brand": "New Balance",
+    "name": "Tenis Mujer Lifestyle new balance 1906R Nude",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 599900,
+    "regularPrice": 994900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-new-balance-1906R-Nude-2833086.html",
+    "image": "imagenes/ver-wmn-ne185shyb5z1co.jpg",
+    "materials": "Malla + Overlays nude/beige + Mediasuela N-ergy",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 9,
+    "easyCleanScore": 8,
+    "desc": "Silueta voluminosa New Balance 1906R en tono nude/beige: diseño arquitectónico con soporte Stability Web y amortiguación N-ergy pensada para looks streetwear elevados.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 35 CO"
+  },
+  {
+    "id": "ver-wmn-ne185shybgpmco",
+    "brand": "New Balance",
+    "name": "Tenis Deportivos New Balance 530 Blanco Unisex",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 389900,
+    "regularPrice": 659900,
+    "url": "https://www.dafiti.com.co/Tenis-Deportivos-New-Balance-530-Blanco-Unisex-2824357.html",
+    "image": "imagenes/ver-wmn-ne185shybgpmco.jpg",
+    "materials": "Malla aireada + Superposiciones tono marfil + Amortiguación ABZORB",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 9,
+    "easyCleanScore": 8,
+    "desc": "Chunky ligero en tonos blanco/marfil que combina la tendencia dad-shoe con comodidad extrema ABZORB para caminar todo el día con looks casuales o elegantes relajados.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 5 US, 5.5 US, 6 US, 7.5 US"
+  },
+  {
+    "id": "ver-wmn-ne185shyd8qwco",
+    "brand": "New Balance",
+    "name": "Tenis Mujer Lifestyle new balance 530 Marfil",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 396900,
+    "regularPrice": 574900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-new-balance-530-Marfil-2749143.html",
+    "image": "imagenes/ver-wmn-ne185shyd8qwco.jpg",
+    "materials": "Malla aireada + Superposiciones tono marfil + Amortiguación ABZORB",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 9,
+    "easyCleanScore": 8,
+    "desc": "Chunky ligero en tonos blanco/marfil que combina la tendencia dad-shoe con comodidad extrema ABZORB para caminar todo el día con looks casuales o elegantes relajados.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 35 CO, 35.5 CO, 36 CO"
+  },
+  {
+    "id": "ver-wmn-ni010shyghogco",
+    "brand": "Nike",
+    "name": "Tenis Mujer Lifestyle NIKE AL8 Blanco",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 329900,
+    "regularPrice": 549950,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-NIKE-AL8-Blanco-2589823.html",
+    "image": "imagenes/ver-wmn-ni010shyghogco.jpg",
+    "materials": "Malla + Gamuza beige/blanco + Mediasuela gruesa de espuma",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 9,
+    "easyCleanScore": 8,
+    "desc": "Nike AL8 con suela gruesa tipo gofre y proporciones chunky elegantes en blanco/beige: cero look de gimnasio, 100% moda diaria cómoda.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 35.5 CO, 36 CO, 37 CO"
+  },
+  {
+    "id": "ver-wmn-4291",
+    "brand": "ASICS",
+    "name": "Tenis ASICS GEL-Nyc 2.0 - Beige",
+    "category": "W",
+    "gender": "women",
+    "store": "ASICS.com.co (Oficial)",
+    "storeName": "ASICS.com.co (Oficial)",
+    "currency": "COP",
+    "salePrice": 454965,
+    "regularPrice": 649950,
+    "url": "https://www.asics.com.co/1203a895-100/p",
+    "image": "imagenes/ver-wmn-4291.jpg",
+    "materials": "Gamuza crema + Malla + Amortiguación GEL & espuma ligera",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 10,
+    "easyCleanScore": 8,
+    "desc": "ASICS GEL-NYC en tonos beige/crema: volumen escultórico tendencia en moda europea, comodísimos con tecnología GEL para caminar horas sin verse deportivos.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 5 US, 5.5 US"
+  },
+  {
+    "id": "ver-wmn-ni010shyeme3co",
+    "brand": "Nike",
+    "name": "Tenis Mujer Lifestyle NIKE AL8 Blanco",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 379900,
+    "regularPrice": 569900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-NIKE-AL8-Blanco-2677024.html",
+    "image": "imagenes/ver-wmn-ni010shyeme3co.jpg",
+    "materials": "Malla + Gamuza beige/blanco + Mediasuela gruesa de espuma",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 9,
+    "easyCleanScore": 8,
+    "desc": "Nike AL8 con suela gruesa tipo gofre y proporciones chunky elegantes en blanco/beige: cero look de gimnasio, 100% moda diaria cómoda.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 36 CO, 36.5 CO, 37 CO, 37.5 CO, 38 CO, 5 US"
+  },
+  {
+    "id": "ver-wmn-sk072shy5gipco",
+    "brand": "Skechers",
+    "name": "Tenis Mujer Outdoor SKECHERS D'Lites Hiker  Beige",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 209900,
+    "regularPrice": 269900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Outdoor-SKECHERS-DLites-Hiker--Beige-2917918.html",
+    "image": "imagenes/ver-wmn-sk072shy5gipco.jpg",
+    "materials": "Durabuck liso fácil de limpiar + Memory Foam + Suela chunky",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 10,
+    "easyCleanScore": 8,
+    "desc": "Silueta chunky ultra cómoda con plantilla Air-Cooled Memory Foam de Skechers en tonos claros: altura, volumen y suavidad para todo el día.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 35 CO, 36 CO, 37 CO, 38 CO, 5 US"
+  },
+  {
+    "id": "ver-wmn-ne185shycb31co",
+    "brand": "New Balance",
+    "name": "Tenis Mujer Lifestyle new balance 530 Blanco",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 514900,
+    "regularPrice": 744900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-new-balance-530-Blanco-2784846.html",
+    "image": "imagenes/ver-wmn-ne185shycb31co.jpg",
+    "materials": "Malla aireada + Superposiciones tono marfil + Amortiguación ABZORB",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 9,
+    "easyCleanScore": 8,
+    "desc": "Chunky ligero en tonos blanco/marfil que combina la tendencia dad-shoe con comodidad extrema ABZORB para caminar todo el día con looks casuales o elegantes relajados.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 35.5 CO, 36 CO"
+  },
+  {
+    "id": "ver-wmn-ca033shy5s85co",
+    "brand": "Calvin Klein",
+    "name": "Tenis Blanco Chunky Cupsole Con Cordones Calvin Klein",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 398930,
+    "regularPrice": 569900,
+    "url": "https://www.dafiti.com.co/Tenis-Blanco-Chunky-Cupsole-Con-Cordones-Calvin-Klein-2902958.html",
+    "image": "imagenes/ver-wmn-ca033shy5s85co.jpg",
+    "materials": "Cuero / Sintético premium + Suela chunky con tracción",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 8,
+    "easyCleanScore": 8,
+    "desc": "Diseño chunky de moda en cuero tono beige/blanco con suela voluminosa arquitectónica pensada específicamente para vestir con prendas urbanas y no deportivas.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 36 CO, 37 CO, 38 CO, 5 US"
+  },
+  {
+    "id": "ver-wmn-ca033shya5iqco",
+    "brand": "Calvin Klein",
+    "name": "Tenis Blanco Chunky Runner Calvin Klein",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 419930,
+    "regularPrice": 599900,
+    "url": "https://www.dafiti.com.co/Tenis-Blanco-Chunky-Runner-Calvin-Klein-2880333.html",
+    "image": "imagenes/ver-wmn-ca033shya5iqco.jpg",
+    "materials": "Cuero / Sintético premium + Suela chunky con tracción",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 8,
+    "easyCleanScore": 8,
+    "desc": "Diseño chunky de moda en cuero tono beige/blanco con suela voluminosa arquitectónica pensada específicamente para vestir con prendas urbanas y no deportivas.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 36 CO, 37 CO, 38 CO, 5 US"
+  },
+  {
+    "id": "ver-wmn-ne185shya3pxco",
+    "brand": "New Balance",
+    "name": "Tenis Mujer Lifestyle new balance 530 Beige",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 423900,
+    "regularPrice": 529900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-new-balance-530-Beige-2882666.html",
+    "image": "imagenes/ver-wmn-ne185shya3pxco.jpg",
+    "materials": "Malla aireada + Superposiciones tono marfil + Amortiguación ABZORB",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 9,
+    "easyCleanScore": 8,
+    "desc": "Chunky ligero en tonos blanco/marfil que combina la tendencia dad-shoe con comodidad extrema ABZORB para caminar todo el día con looks casuales o elegantes relajados.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 35 CO, 35.5 CO, 36 CO, 36.5 CO"
+  },
+  {
+    "id": "ver-wmn-ne185shyam2tco",
+    "brand": "New Balance",
+    "name": "Tenis Mujer Lifestyle new balance 530 Beige",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 531900,
+    "regularPrice": 664900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-new-balance-530-Beige-2863914.html",
+    "image": "imagenes/ver-wmn-ne185shyam2tco.jpg",
+    "materials": "Malla aireada + Superposiciones tono marfil + Amortiguación ABZORB",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 9,
+    "easyCleanScore": 8,
+    "desc": "Chunky ligero en tonos blanco/marfil que combina la tendencia dad-shoe con comodidad extrema ABZORB para caminar todo el día con looks casuales o elegantes relajados.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 35 CO, 35.5 CO, 36 CO, 36.5 CO, 38 CO, 5.5 US"
+  },
+  {
+    "id": "ver-wmn-re059shyfbmhco",
+    "brand": "Reebok",
+    "name": "Tenis Mujer Lifestyle Reebok Club C Extra Marfil",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 304900,
+    "regularPrice": 479900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-Reebok-Club-C-Extra-Marfil-2644326.html",
+    "image": "imagenes/ver-wmn-re059shyfbmhco.jpg",
+    "materials": "Cuero limpio marfil/beige + Plataforma moldeada EVA",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 8,
+    "easyCleanScore": 8,
+    "desc": "Plataforma geométrica gruesa en cuero limpio tono marfil/beige: eleva la estatura con estética minimalista de lujo que combina con vestidos, blazers o jeans.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 37.5 CO, 38 CO"
+  },
+  {
+    "id": "ver-wmn-ne185shyc0fhco",
+    "brand": "New Balance",
+    "name": "Tenis Mujer Lifestyle new balance 530 Blanco",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 443900,
+    "regularPrice": 599900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-new-balance-530-Blanco-2798802.html",
+    "image": "imagenes/ver-wmn-ne185shyc0fhco.jpg",
+    "materials": "Malla aireada + Superposiciones tono marfil + Amortiguación ABZORB",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 9,
+    "easyCleanScore": 8,
+    "desc": "Chunky ligero en tonos blanco/marfil que combina la tendencia dad-shoe con comodidad extrema ABZORB para caminar todo el día con looks casuales o elegantes relajados.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 35 CO, 35.5 CO, 5 US"
+  },
+  {
+    "id": "ver-wmn-ne185shyck7eco",
+    "brand": "New Balance",
+    "name": "Tenis New Balance 530 Mujer-Blanco/Verde",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 444990,
+    "regularPrice": 599990,
+    "url": "https://www.dafiti.com.co/Tenis-New-Balance-530-Mujer-BlancoVerde-2773317.html",
+    "image": "imagenes/ver-wmn-ne185shyck7eco.jpg",
+    "materials": "Malla aireada + Superposiciones tono marfil + Amortiguación ABZORB",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 9,
+    "easyCleanScore": 8,
+    "desc": "Chunky ligero en tonos blanco/marfil que combina la tendencia dad-shoe con comodidad extrema ABZORB para caminar todo el día con looks casuales o elegantes relajados.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 5 US, 5.5 US, 6 US, 6.5 US, 7 US, 7.5 US"
+  },
+  {
+    "id": "ver-wmn-ne185shyck9pco",
+    "brand": "New Balance",
+    "name": "Tenis New Balance 530 Mujer-Blanco/Naranja",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 444990,
+    "regularPrice": 599990,
+    "url": "https://www.dafiti.com.co/Tenis-New-Balance-530-Mujer-BlancoNaranja-2773378.html",
+    "image": "imagenes/ver-wmn-ne185shyck9pco.jpg",
+    "materials": "Malla aireada + Superposiciones tono marfil + Amortiguación ABZORB",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 9,
+    "easyCleanScore": 8,
+    "desc": "Chunky ligero en tonos blanco/marfil que combina la tendencia dad-shoe con comodidad extrema ABZORB para caminar todo el día con looks casuales o elegantes relajados.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 5 US, 6 US, 6.5 US, 7 US, 7.5 US"
+  },
+  {
+    "id": "ver-wmn-ne185shyarobco",
+    "brand": "New Balance",
+    "name": "Tenis Deportivos New Balance Original 1906 AV1 Blanco Unisex",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 659900,
+    "regularPrice": 879900,
+    "url": "https://www.dafiti.com.co/Tenis-Deportivos-New-Balance-Original-1906-AV1-Blanco-Unisex-2856804.html",
+    "image": "imagenes/ver-wmn-ne185shyarobco.jpg",
+    "materials": "Malla + Overlays nude/beige + Mediasuela N-ergy",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 9,
+    "easyCleanScore": 8,
+    "desc": "Silueta voluminosa New Balance 1906R en tono nude/beige: diseño arquitectónico con soporte Stability Web y amortiguación N-ergy pensada para looks streetwear elevados.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 5 US, 5.5 US, 7 US, 7.5 US"
+  },
+  {
+    "id": "ver-wmn-ne185shyc8zwco",
+    "brand": "New Balance",
+    "name": "Tenis New Balance 530 Mujer-Blanco/Verde",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 499990,
+    "regularPrice": 659990,
+    "url": "https://www.dafiti.com.co/Tenis-New-Balance-530-Mujer-BlancoVerde-2795475.html",
+    "image": "imagenes/ver-wmn-ne185shyc8zwco.jpg",
+    "materials": "Malla aireada + Superposiciones tono marfil + Amortiguación ABZORB",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 9,
+    "easyCleanScore": 8,
+    "desc": "Chunky ligero en tonos blanco/marfil que combina la tendencia dad-shoe con comodidad extrema ABZORB para caminar todo el día con looks casuales o elegantes relajados.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 5 US, 5.5 US, 6 US, 6.5 US, 7 US"
+  },
+  {
+    "id": "ver-wmn-ne185shyc8zvco",
+    "brand": "New Balance",
+    "name": "Tenis New Balance 530 Mujer-Blanco/Naranja",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 499990,
+    "regularPrice": 659990,
+    "url": "https://www.dafiti.com.co/Tenis-New-Balance-530-Mujer-BlancoNaranja-2795476.html",
+    "image": "imagenes/ver-wmn-ne185shyc8zvco.jpg",
+    "materials": "Malla aireada + Superposiciones tono marfil + Amortiguación ABZORB",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 9,
+    "easyCleanScore": 8,
+    "desc": "Chunky ligero en tonos blanco/marfil que combina la tendencia dad-shoe con comodidad extrema ABZORB para caminar todo el día con looks casuales o elegantes relajados.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 6 US"
+  },
+  {
+    "id": "ver-wmn-re059shycsyzco",
+    "brand": "Reebok",
+    "name": "Tenis Mujer Lifestyle Reebok Club C Extra Beige",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 291900,
+    "regularPrice": 429900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-Reebok-Club-C-Extra-Beige-2761812.html",
+    "image": "imagenes/ver-wmn-re059shycsyzco.jpg",
+    "materials": "Cuero limpio marfil/beige + Plataforma moldeada EVA",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 8,
+    "easyCleanScore": 8,
+    "desc": "Plataforma geométrica gruesa en cuero limpio tono marfil/beige: eleva la estatura con estética minimalista de lujo que combina con vestidos, blazers o jeans.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 37.5 CO, 38 CO"
+  },
+  {
+    "id": "ver-wmn-ca033shy5mnbco",
+    "brand": "Calvin Klein",
+    "name": "Tenis Beige Chunky De Cuero Con Tracción Calvin Klein",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 447930,
+    "regularPrice": 639900,
+    "url": "https://www.dafiti.com.co/Tenis-Beige-Chunky-De-Cuero-Con-Traccion-Calvin-Klein-2909976.html",
+    "image": "imagenes/ver-wmn-ca033shy5mnbco.jpg",
+    "materials": "Cuero / Sintético premium + Suela chunky con tracción",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 8,
+    "easyCleanScore": 8,
+    "desc": "Diseño chunky de moda en cuero tono beige/blanco con suela voluminosa arquitectónica pensada específicamente para vestir con prendas urbanas y no deportivas.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 37 CO, 38 CO, 5 US"
+  },
+  {
+    "id": "ver-wmn-3333",
+    "brand": "ASICS",
+    "name": "Tenis ASICS GEL-Nyc - Beige",
+    "category": "W",
+    "gender": "women",
+    "store": "ASICS.com.co (Oficial)",
+    "storeName": "ASICS.com.co (Oficial)",
+    "currency": "COP",
+    "salePrice": 454965,
+    "regularPrice": 649950,
+    "url": "https://www.asics.com.co/1203a383-112/p",
+    "image": "imagenes/ver-wmn-3333.jpg",
+    "materials": "Gamuza crema + Malla + Amortiguación GEL & espuma ligera",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 10,
+    "easyCleanScore": 8,
+    "desc": "ASICS GEL-NYC en tonos beige/crema: volumen escultórico tendencia en moda europea, comodísimos con tecnología GEL para caminar horas sin verse deportivos.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 5 US"
+  },
+  {
+    "id": "ver-wmn-ne185shyam2uco",
+    "brand": "New Balance",
+    "name": "Tenis Mujer Lifestyle new balance 530 Blanco",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 483900,
+    "regularPrice": 604900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-new-balance-530-Blanco-2863913.html",
+    "image": "imagenes/ver-wmn-ne185shyam2uco.jpg",
+    "materials": "Malla aireada + Superposiciones tono marfil + Amortiguación ABZORB",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 9,
+    "easyCleanScore": 8,
+    "desc": "Chunky ligero en tonos blanco/marfil que combina la tendencia dad-shoe con comodidad extrema ABZORB para caminar todo el día con looks casuales o elegantes relajados.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 35 CO, 35.5 CO, 36 CO, 36.5 CO, 38 CO"
+  },
+  {
+    "id": "ver-wmn-ne185shyam2qco",
+    "brand": "New Balance",
+    "name": "Tenis Mujer Lifestyle new balance 530 Blanco",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 479900,
+    "regularPrice": 599900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-new-balance-530-Blanco-2863917.html",
+    "image": "imagenes/ver-wmn-ne185shyam2qco.jpg",
+    "materials": "Malla aireada + Superposiciones tono marfil + Amortiguación ABZORB",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 9,
+    "easyCleanScore": 8,
+    "desc": "Chunky ligero en tonos blanco/marfil que combina la tendencia dad-shoe con comodidad extrema ABZORB para caminar todo el día con looks casuales o elegantes relajados.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 35 CO, 35.5 CO, 36 CO, 36.5 CO, 5.5 US"
+  },
+  {
+    "id": "ver-wmn-4384",
+    "brand": "ASICS",
+    "name": "Tenis ASICS GEL-Nyc - Beige",
+    "category": "W",
+    "gender": "women",
+    "store": "ASICS.com.co (Oficial)",
+    "storeName": "ASICS.com.co (Oficial)",
+    "currency": "COP",
+    "salePrice": 539955,
+    "regularPrice": 599950,
+    "url": "https://www.asics.com.co/1203a383-121/p",
+    "image": "imagenes/ver-wmn-4384.jpg",
+    "materials": "Gamuza crema + Malla + Amortiguación GEL & espuma ligera",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 10,
+    "easyCleanScore": 8,
+    "desc": "ASICS GEL-NYC en tonos beige/crema: volumen escultórico tendencia en moda europea, comodísimos con tecnología GEL para caminar horas sin verse deportivos.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 5 US, 5.5 US, 6 US, 6.5 US, 7 US"
+  },
+  {
+    "id": "ver-wmn-4746",
+    "brand": "ASICS",
+    "name": "Tenis ASICS GEL-Nyc 2.0 - Beige",
+    "category": "W",
+    "gender": "women",
+    "store": "ASICS.com.co (Oficial)",
+    "storeName": "ASICS.com.co (Oficial)",
+    "currency": "COP",
+    "salePrice": 584955,
+    "regularPrice": 649950,
+    "url": "https://www.asics.com.co/1203b153-750/p",
+    "image": "imagenes/ver-wmn-4746.jpg",
+    "materials": "Gamuza crema + Malla + Amortiguación GEL & espuma ligera",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 10,
+    "easyCleanScore": 8,
+    "desc": "ASICS GEL-NYC en tonos beige/crema: volumen escultórico tendencia en moda europea, comodísimos con tecnología GEL para caminar horas sin verse deportivos.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 5 US, 6 US, 6.5 US, 7 US, 7.5 US"
+  },
+  {
+    "id": "ver-wmn-sk072shya0q2co",
+    "brand": "Skechers",
+    "name": "Tenis Mujer Lifestyle SKECHERS Uno CTL Blanco",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 163900,
+    "regularPrice": 269900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-SKECHERS-Uno-CTL-Blanco-2891729.html",
+    "image": "imagenes/ver-wmn-sk072shya0q2co.jpg",
+    "materials": "Durabuck liso fácil de limpiar + Memory Foam + Suela chunky",
+    "waterproof": false,
+    "freeShipping": false,
+    "comfortScore": 10,
+    "easyCleanScore": 8,
+    "desc": "Silueta chunky ultra cómoda con plantilla Air-Cooled Memory Foam de Skechers en tonos claros: altura, volumen y suavidad para todo el día.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 35 CO, 37 CO, 38 CO"
+  },
+  {
+    "id": "ver-wmn-sk072shybbrdco",
+    "brand": "Skechers",
+    "name": "Tenis Mujer Outdoor SKECHERS D'Lites Beige",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 287900,
+    "regularPrice": 379900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Outdoor-SKECHERS-DLites-Beige-2830774.html",
+    "image": "imagenes/ver-wmn-sk072shybbrdco.jpg",
+    "materials": "Durabuck liso fácil de limpiar + Memory Foam + Suela chunky",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 10,
+    "easyCleanScore": 8,
+    "desc": "Silueta chunky ultra cómoda con plantilla Air-Cooled Memory Foam de Skechers en tonos claros: altura, volumen y suavidad para todo el día.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 37.5 CO, 38 CO"
+  },
+  {
+    "id": "ver-wmn-re059shydcr6co",
+    "brand": "Reebok",
+    "name": "Tenis Mujer Lifestyle Reebok Club C Extra Blanco",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 247900,
+    "regularPrice": 359900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-Reebok-Club-C-Extra-Blanco-2736175.html",
+    "image": "imagenes/ver-wmn-re059shydcr6co.jpg",
+    "materials": "Cuero limpio marfil/beige + Plataforma moldeada EVA",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 8,
+    "easyCleanScore": 8,
+    "desc": "Plataforma geométrica gruesa en cuero limpio tono marfil/beige: eleva la estatura con estética minimalista de lujo que combina con vestidos, blazers o jeans.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 38 CO"
+  },
+  {
+    "id": "ver-wmn-ca033shy5gteco",
+    "brand": "Calvin Klein",
+    "name": "Tenis Blanco Chunky Cupsole Laceup Calvin Klein",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 398930,
+    "regularPrice": 569900,
+    "url": "https://www.dafiti.com.co/Tenis-Blanco-Chunky-Cupsole-Laceup-Calvin-Klein-2917533.html",
+    "image": "imagenes/ver-wmn-ca033shy5gteco.jpg",
+    "materials": "Cuero / Sintético premium + Suela chunky con tracción",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 8,
+    "easyCleanScore": 8,
+    "desc": "Diseño chunky de moda en cuero tono beige/blanco con suela voluminosa arquitectónica pensada específicamente para vestir con prendas urbanas y no deportivas.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 38 CO, 5 US"
+  },
+  {
+    "id": "ver-wmn-4388",
+    "brand": "ASICS",
+    "name": "Tenis ASICS GEL-Nyc - Beige",
+    "category": "W",
+    "gender": "women",
+    "store": "ASICS.com.co (Oficial)",
+    "storeName": "ASICS.com.co (Oficial)",
+    "currency": "COP",
+    "salePrice": 519960,
+    "regularPrice": 649950,
+    "url": "https://www.asics.com.co/1203a383-114/p",
+    "image": "imagenes/ver-wmn-4388.jpg",
+    "materials": "Gamuza crema + Malla + Amortiguación GEL & espuma ligera",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 10,
+    "easyCleanScore": 8,
+    "desc": "ASICS GEL-NYC en tonos beige/crema: volumen escultórico tendencia en moda europea, comodísimos con tecnología GEL para caminar horas sin verse deportivos.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 6.5 US"
+  },
+  {
+    "id": "ver-wmn-re059shyc6kcco",
+    "brand": "Reebok",
+    "name": "Tenis Mujer Lifestyle Reebok Club C Extra Blanco",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 281900,
+    "regularPrice": 379900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-Reebok-Club-C-Extra-Blanco-2793443.html",
+    "image": "imagenes/ver-wmn-re059shyc6kcco.jpg",
+    "materials": "Cuero limpio marfil/beige + Plataforma moldeada EVA",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 8,
+    "easyCleanScore": 8,
+    "desc": "Plataforma geométrica gruesa en cuero limpio tono marfil/beige: eleva la estatura con estética minimalista de lujo que combina con vestidos, blazers o jeans.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 37.5 CO, 38 CO"
+  },
+  {
+    "id": "ver-wmn-ni010shybqeoco",
+    "brand": "Nike",
+    "name": "Tenis Mujer Lifestyle NIKE Air Max Excee Marfil",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 335900,
+    "regularPrice": 559950,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-NIKE-Air-Max-Excee-Marfil-2811791.html",
+    "image": "imagenes/ver-wmn-ni010shybqeoco.jpg",
+    "materials": "Cuero multicapa blanco/marfil + Espuma cómoda",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 8,
+    "easyCleanScore": 8,
+    "desc": "Silueta lifestyle en capas de cuero blanco/marfil con plataforma sutil y acabado limpio que combina perfecto con ropa casual o smart-casual.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 37 CO, 37.5 CO"
+  },
+  {
+    "id": "ver-wmn-ne185shyctorco",
+    "brand": "New Balance",
+    "name": "Tenis Deportivo New Balance Original 9060 Blanco Unisex",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 639900,
+    "regularPrice": 849900,
+    "url": "https://www.dafiti.com.co/Tenis-Deportivo-New-Balance-Original-9060-Blanco-Unisex-2760884.html",
+    "image": "imagenes/ver-wmn-ne185shyctorco.jpg",
+    "materials": "Gamuza suave + Malla transpirable + Mediasuela chunky ABZORB",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 10,
+    "easyCleanScore": 8,
+    "desc": "Silueta chunky escultórica estilo Balenciaga Triple S: mediasuela voluminosa de doble densidad ABZORB + SBS, ultra cómoda y perfecta para elevar jeans, pantalones sastre o looks casuales en tono neutro.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 5 US, 7 US, 7.5 US"
+  },
+  {
+    "id": "ver-wmn-sk072shyb4aoco",
+    "brand": "Skechers",
+    "name": "Tenis Mujer Lifestyle SKECHERS D'lites Blanco",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 349900,
+    "regularPrice": 459900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-SKECHERS-Dlites-Blanco-2835263.html",
+    "image": "imagenes/ver-wmn-sk072shyb4aoco.jpg",
+    "materials": "Durabuck liso fácil de limpiar + Memory Foam + Suela chunky",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 10,
+    "easyCleanScore": 8,
+    "desc": "Silueta chunky ultra cómoda con plantilla Air-Cooled Memory Foam de Skechers en tonos claros: altura, volumen y suavidad para todo el día.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 36.5 CO, 37 CO, 37.5 CO, 38 CO"
+  },
+  {
+    "id": "ver-wmn-ni010shyfq0jco",
+    "brand": "Nike",
+    "name": "Tenis Mujer Lifestyle NIKE Gamma Force Blanco",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 282900,
+    "regularPrice": 519900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-NIKE-Gamma-Force-Blanco-2625676.html",
+    "image": "imagenes/ver-wmn-ni010shyfq0jco.jpg",
+    "materials": "Cuero multicapa blanco/marfil + Espuma cómoda",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 8,
+    "easyCleanScore": 8,
+    "desc": "Silueta lifestyle en capas de cuero blanco/marfil con plataforma sutil y acabado limpio que combina perfecto con ropa casual o smart-casual.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 5 US"
+  },
+  {
+    "id": "ver-wmn-pu078shyem2hco",
+    "brand": "PUMA",
+    "name": "Tenis Mujer Lifestyle PUMA Carina 3.0 Blanco",
+    "category": "W",
+    "gender": "women",
+    "store": "Dafiti Colombia",
+    "storeName": "Dafiti Colombia",
+    "currency": "COP",
+    "salePrice": 217900,
+    "regularPrice": 379900,
+    "url": "https://www.dafiti.com.co/Tenis-Mujer-Lifestyle-PUMA-Carina-30-Blanco-2677302.html",
+    "image": "imagenes/ver-wmn-pu078shyem2hco.jpg",
+    "materials": "Cuero sintético / Gamuza neutra + Plataforma cómoda",
+    "waterproof": false,
+    "freeShipping": true,
+    "comfortScore": 8,
+    "easyCleanScore": 8,
+    "desc": "Tenis chunky/plataforma de moda en tono neutro (blanco), cómodos y pensados para combinar con prendas no deportivas.",
+    "verified": true,
+    "dealStatus": "active",
+    "verifiedSizes": "Tallas mujer hoy: 6.5 US, 7.5 US"
   }
 ];
 
@@ -8630,7 +9573,7 @@ const STORAGE_KEYS = {
 };
 
 let state = {
-  category: 'ALL', // 'ALL' | 'A' | 'B' | 'C' | 'EXPIRED'
+  category: 'ALL', // 'ALL' (Hombre) | 'A' | 'B' | 'C' | 'W' (Mujer 35-38 CO) | 'EXPIRED'
   vibe: 'all',
   quickBrand: 'ALL',
   search: '',
@@ -8639,7 +9582,8 @@ let state = {
   brands: new Set([
     'ASICS', 'Adidas', 'Adidas Originals', 'Adidas Performance', 'Reebok', 'Nike',
     'New Balance', 'Vans', 'Skechers', 'Under Armour', 'Nautica', 'Merrell',
-    'HOKA', 'Columbia', 'Altra', 'Brooks', 'Mizuno', 'PUMA', 'Saucony', 'Salomon'
+    'HOKA', 'Columbia', 'Altra', 'Brooks', 'Mizuno', 'PUMA', 'Saucony', 'Salomon',
+    'FILA', 'Calvin Klein'
   ]),
   onlyWaterproof: false,
   onlyFreeShipping: false,
@@ -8664,6 +9608,10 @@ function saveState() {
 
 function isExpiredDeal(p) {
   return p.dealStatus === 'soldout' || p.dealStatus === 'no_discount';
+}
+
+function isWomenDeal(p) {
+  return p.category === 'W' || p.gender === 'women';
 }
 
 function getPriceCop(product) {
@@ -8698,6 +9646,7 @@ function getCategoryMeta(cat) {
     case 'A': return { label: 'Futurista' };
     case 'B': return { label: 'Fácil Limpieza' };
     case 'C': return { label: 'Máximo Confort' };
+    case 'W': return { label: 'Mujer · Chunky' };
     default: return { label: 'Calzado' };
   }
 }
@@ -8731,14 +9680,18 @@ function getShortStoreName(p) {
 function cleanProductTitle(p) {
   let t = (p.name || '').trim();
   t = t.replace(/^Tenis\s+Hombre\s+Lifestyle\s*/i, '');
+  t = t.replace(/^Tenis\s+Mujer\s+Lifestyle\s*/i, '');
+  t = t.replace(/^Tenis\s+Mujer\s+Outdoor\s*/i, '');
   t = t.replace(/^Tenis\s+Hombre\s+Running\s+/i, '');
   t = t.replace(/^Tenis\s+Running\s+Hombre\s+/i, '');
   t = t.replace(/^Tenis\s+Hombre\s+Under\s+Armour\s+/i, 'Under Armour ');
   t = t.replace(/^Tenis\s+Unisex\s+Under\s+Armour\s+/i, 'Under Armour ');
   t = t.replace(/^Tenis\s+Hombre\s+/i, '');
+  t = t.replace(/^Tenis\s+Mujer\s+/i, '');
   t = t.replace(/^Tenis\s+Casual\s+/i, '');
   t = t.replace(/^Zapatillas\s+Hombre\s+/i, '');
   t = t.replace(/\s+Under\s+Armour$/i, '');
+  t = t.replace(/\s+Calvin\s+Klein$/i, '');
   return t.trim();
 }
 
@@ -8769,8 +9722,10 @@ function renderBrandQuickDock() {
     if (state.discarded.has(p.id)) return false;
     if (state.category === 'EXPIRED') {
       if (!isExpiredDeal(p)) return false;
+    } else if (state.category === 'W') {
+      if (!isWomenDeal(p) || isExpiredDeal(p)) return false;
     } else {
-      if (isExpiredDeal(p)) return false;
+      if (isExpiredDeal(p) || isWomenDeal(p)) return false;
       if (state.onlyVerified && !p.verified) return false;
       if (state.category !== 'ALL' && p.category !== state.category) return false;
     }
@@ -8824,18 +9779,19 @@ function filterProducts() {
       if (state.discarded.has(p.id)) return false;
     }
 
-    // Separación estricta entre ofertas activas y Agotados / Sin descuento
     if (state.viewMode === 'catalog') {
       if (state.category === 'EXPIRED') {
         if (!isExpiredDeal(p)) return false;
+      } else if (state.category === 'W') {
+        if (!isWomenDeal(p) || isExpiredDeal(p)) return false;
       } else {
-        if (isExpiredDeal(p)) return false;
+        if (isExpiredDeal(p) || isWomenDeal(p)) return false;
         if (state.onlyVerified && !p.verified) return false;
         if (state.category !== 'ALL' && p.category !== state.category) return false;
       }
     }
 
-    if (!matchesVibe(p, state.vibe)) return false;
+    if (state.category !== 'W' && !matchesVibe(p, state.vibe)) return false;
     if (state.quickBrand !== 'ALL' && p.brand !== state.quickBrand) return false;
 
     if (state.search.trim() !== '') {
@@ -8868,20 +9824,30 @@ function filterProducts() {
 }
 
 function updateCountsAndStats() {
-  const activeCatalog = PRODUCTS.filter(p => !state.discarded.has(p.id) && !isExpiredDeal(p) && (!state.onlyVerified || p.verified));
+  const activeMen = PRODUCTS.filter(p => !state.discarded.has(p.id) && !isExpiredDeal(p) && !isWomenDeal(p) && (!state.onlyVerified || p.verified));
+  const activeWomen = PRODUCTS.filter(p => !state.discarded.has(p.id) && !isExpiredDeal(p) && isWomenDeal(p));
   const expiredCatalog = PRODUCTS.filter(p => !state.discarded.has(p.id) && isExpiredDeal(p));
 
   const countAll = document.getElementById('countAll');
   const countA = document.getElementById('countA');
   const countB = document.getElementById('countB');
   const countC = document.getElementById('countC');
+  const countW = document.getElementById('countW');
   const countExpired = document.getElementById('countExpired');
 
-  if (countAll) countAll.textContent = activeCatalog.length;
-  if (countA) countA.textContent = activeCatalog.filter(p => p.category === 'A').length;
-  if (countB) countB.textContent = activeCatalog.filter(p => p.category === 'B').length;
-  if (countC) countC.textContent = activeCatalog.filter(p => p.category === 'C').length;
+  if (countAll) countAll.textContent = activeMen.length;
+  if (countA) countA.textContent = activeMen.filter(p => p.category === 'A').length;
+  if (countB) countB.textContent = activeMen.filter(p => p.category === 'B').length;
+  if (countC) countC.textContent = activeMen.filter(p => p.category === 'C').length;
+  if (countW) countW.textContent = activeWomen.length;
   if (countExpired) countExpired.textContent = expiredCatalog.length;
+
+  const sizeMeta = document.getElementById('brandSizeMeta');
+  if (sizeMeta) {
+    sizeMeta.textContent = state.category === 'W'
+      ? 'MUJER · TALLAS 35–38 CO (5–7.5 US)'
+      : 'CO · TALLAS 41–44 (10–11 US)';
+  }
 
   const likedBadge = document.getElementById('likedCountBadge');
   const discardedBadge = document.getElementById('discardedCountBadge');
@@ -8895,7 +9861,7 @@ function updateCountsAndStats() {
   if (state.onlyFreeShipping) filterCount++;
   if (state.onlyBigDiscount) filterCount++;
   if (state.stores.size < 7) filterCount++;
-  if (state.brands.size < 20) filterCount++;
+  if (state.brands.size < 22) filterCount++;
 
   const badge = document.getElementById('activeFiltersBadge');
   if (badge) {
@@ -8916,12 +9882,16 @@ function renderProducts() {
   const empty = document.getElementById('emptyState');
   const countText = document.getElementById('resultsCountText');
   const expiredBanner = document.getElementById('expiredBanner');
+  const womenBanner = document.getElementById('womenBanner');
   const filtered = filterProducts();
 
   state.currentFilteredIds = filtered.map(p => p.id);
 
   if (expiredBanner) {
     expiredBanner.style.display = (state.viewMode === 'catalog' && state.category === 'EXPIRED') ? 'flex' : 'none';
+  }
+  if (womenBanner) {
+    womenBanner.style.display = (state.viewMode === 'catalog' && state.category === 'W') ? 'block' : 'none';
   }
 
   if (state.viewMode === 'liked') {
@@ -8930,6 +9900,8 @@ function renderProducts() {
     countText.innerHTML = `${filtered.length} ocultos · <button class="text-link-muted" id="btnBackCatalogInline">Ver activos</button>`;
   } else if (state.category === 'EXPIRED') {
     countText.textContent = `${filtered.length} agotados / sin dto.`;
+  } else if (state.category === 'W') {
+    countText.textContent = `${filtered.length} pares mujer`;
   } else {
     countText.textContent = `${filtered.length} pares`;
   }
@@ -8975,8 +9947,8 @@ function renderProducts() {
       : `~${formatUsd(p.salePrice / state.trm)}`;
 
     const rawSizes = p.verifiedSizes
-      ? p.verifiedSizes.replace('Tallas en stock hoy:', '').replace('Tallas:', '').trim()
-      : '41–44 CO';
+      ? p.verifiedSizes.replace('Tallas en stock hoy:', '').replace('Tallas mujer hoy:', '').replace('Tallas:', '').trim()
+      : (isWomenDeal(p) ? '35–38 CO' : '41–44 CO');
 
     let topBadge = `<span></span>`;
     if (p.dealStatus === 'soldout') {
@@ -9160,7 +10132,7 @@ function openCompareModal() {
             <div class="compare-row-item"><span>Precio regular</span><span>${formatCop(reg)}</span></div>
             <div class="compare-row-item"><span>Ahorro</span><strong style="color:var(--accent-stockx)">${formatCop(sav)}</strong></div>
             <div class="compare-row-item"><span>Tienda</span><strong>${getShortStoreName(p)}</strong></div>
-            <div class="compare-row-item"><span>Tallas</span><strong>${p.verifiedSizes ? p.verifiedSizes.replace('Tallas en stock hoy:', '') : '41–44 CO'}</strong></div>
+            <div class="compare-row-item"><span>Tallas</span><strong>${p.verifiedSizes ? p.verifiedSizes.replace('Tallas en stock hoy:', '').replace('Tallas mujer hoy:', '') : 'Ver en tienda'}</strong></div>
             <div class="compare-row-item"><span>Materiales</span><span>${p.materials || 'Estándar'}</span></div>
             <a href="${p.url}" target="_blank" rel="noopener noreferrer" class="btn-solid-dark" style="margin-top:8px;">Ir a Tienda ↗</a>
           </div>
@@ -9230,7 +10202,7 @@ function openQuickView(productId) {
   document.getElementById('qvSpecsGrid').innerHTML = `
     <div class="spec-box">
       <span>Estado de stock hoy</span>
-      <strong>${expired ? (p.statusReason || 'Agotado / Sin descuento') : (p.verifiedSizes ? p.verifiedSizes.replace('Tallas en stock hoy:', '') : '41–44 CO / 10–11 US')}</strong>
+      <strong>${expired ? (p.statusReason || 'Agotado / Sin descuento') : (p.verifiedSizes ? p.verifiedSizes.replace('Tallas en stock hoy:', '').replace('Tallas mujer hoy:', '') : 'Disponible')}</strong>
     </div>
     <div class="spec-box">
       <span>Tienda Oficial</span>
@@ -9277,7 +10249,7 @@ function buildExportText() {
   if (likedProducts.length === 0) return 'No tienes pares guardados todavía.';
 
   const lines = [
-    'ZAP / ARCHIVE — PARES GUARDADOS (TALLAS 41-44 CO / 10-11 US)',
+    'ZAP / ARCHIVE — PARES GUARDADOS',
     `TRM: $${state.trm} COP/USD | Total: ${likedProducts.length}`,
     '------------------------------------------------------------',
     ''
@@ -9286,9 +10258,9 @@ function buildExportText() {
   likedProducts.forEach((p, i) => {
     const cop = formatCop(getPriceCop(p));
     const pct = getDiscountPercent(p);
-    lines.push(`${i + 1}. [${p.brand}] ${cleanProductTitle(p)}`);
+    lines.push(`${i + 1}. [${p.brand}${isWomenDeal(p) ? ' · MUJER' : ''}] ${cleanProductTitle(p)}`);
     lines.push(`   Precio: ${cop} COP (-${pct}%) | Tienda: ${p.storeName}`);
-    lines.push(`   Tallas: ${p.verifiedSizes || '41-44 CO'}`);
+    lines.push(`   Tallas: ${p.verifiedSizes || 'Ver en tienda'}`);
     lines.push(`   Link: ${p.url}`);
     lines.push('');
   });
@@ -9307,7 +10279,7 @@ function openExportModal() {
     body.innerHTML = likedProducts.map(p => `
       <div class="saved-item-row">
         <div>
-          <strong style="font-size:0.88rem;">${p.brand} — ${cleanProductTitle(p)}</strong>
+          <strong style="font-size:0.88rem;">${p.brand}${isWomenDeal(p) ? ' · Mujer' : ''} — ${cleanProductTitle(p)}</strong>
           <div style="font-size:0.76rem;color:var(--ink-muted)">
             ${formatCop(getPriceCop(p))} COP (-${getDiscountPercent(p)}%) · ${p.storeName}
           </div>
@@ -9350,7 +10322,7 @@ function initEvents() {
       chip.classList.add('active');
       state.vibe = chip.dataset.vibe;
       state.viewMode = 'catalog';
-      if (state.category === 'EXPIRED') {
+      if (state.category === 'EXPIRED' || state.category === 'W') {
         state.category = 'ALL';
         document.querySelectorAll('#categoryTabs .nav-tab').forEach(t => t.classList.toggle('active', t.dataset.cat === 'ALL'));
       }

@@ -23,7 +23,7 @@
       <!-- Marca -->
       <div class="archive-brand">
         <a href="#" class="brand-wordmark" id="btnLogoReset">ZAP<span>/</span>ARCHIVE</a>
-        <span class="brand-meta">CO · TALLAS 41–44 (10–11 US)</span>
+        <span class="brand-meta" id="brandSizeMeta">CO · TALLAS 41–44 (10–11 US)</span>
       </div>
 
       <!-- Categorías centrales en texto limpio (Sin cajas pesadas) -->
@@ -43,6 +43,10 @@
         <button class="nav-tab" data-cat="C">
           <span>Máximo Confort</span>
           <sup id="countC">66</sup>
+        </button>
+        <button class="nav-tab nav-tab-women" data-cat="W">
+          <span>Mujer · Chunky</span>
+          <sup id="countW">41</sup>
         </button>
         <button class="nav-tab nav-tab-expired" data-cat="EXPIRED">
           <span>Agotados / Sin dto.</span>
@@ -189,6 +193,8 @@
           <label class="check-item"><input type="checkbox" value="PUMA" checked /> <span>PUMA</span></label>
           <label class="check-item"><input type="checkbox" value="Saucony" checked /> <span>Saucony</span></label>
           <label class="check-item"><input type="checkbox" value="Salomon" checked /> <span>Salomon</span></label>
+          <label class="check-item"><input type="checkbox" value="FILA" checked /> <span>FILA</span></label>
+          <label class="check-item"><input type="checkbox" value="Calvin Klein" checked /> <span>Calvin Klein</span></label>
         </div>
       </div>
 
@@ -212,6 +218,12 @@
 
   <!-- GRILLA EDITORIAL PRINCIPAL (ESTILO NIKE / ADIDAS ORIGINALS / KITH) -->
   <main class="gallery-main">
+    <div class="women-banner" id="womenBanner" style="display:none;">
+      <div>
+        <span class="women-banner-kicker">SECCIÓN MUJER · TALLAS 35–38 CO (5–7.5 US · 22–24.5 CM)</span>
+        <p><strong>Chunky, Plataforma &amp; Estilo Balenciaga Triple S:</strong> Tenis grandes, cómodos y con volumen en tonos <strong>beige, blanco y marfil</strong> pensados para combinar con prendas urbanas y no deportivas (incluye tu talla exacta <code>5.5 US / 225 mm / 35.5–36 CO</code>).</p>
+      </div>
+    </div>
     <div class="expired-banner" id="expiredBanner" style="display:none;">
       <p><strong>Archivo de Agotados y Sin Descuento:</strong> Estos modelos se agotaron en tus tallas (41–44 CO / 10–11 US) o volvieron a precio regular en la última revisión en vivo. Los conservamos aquí por si vuelven a bajar.</p>
       <button class="control-trigger" id="btnBackActiveFromExpired">Volver a ofertas activas</button>

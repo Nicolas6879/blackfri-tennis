@@ -167,6 +167,51 @@ body {
   color: var(--ink-black);
 }
 
+.nav-tab-women {
+  color: #6B5B4D;
+  font-weight: 600;
+}
+
+.nav-tab-women.active {
+  color: #4A3728;
+}
+
+.nav-tab-women.active::after {
+  background: #4A3728;
+}
+
+.women-banner {
+  margin-bottom: 22px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background: #EFECE5;
+  border: 1px solid #DFD9CE;
+}
+
+.women-banner-kicker {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.69rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #6B5B4D;
+  margin-bottom: 4px;
+}
+
+.women-banner p {
+  font-size: 0.84rem;
+  color: var(--ink-dark);
+  line-height: 1.48;
+}
+
+.women-banner code {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
 .nav-tab-expired {
   color: var(--ink-subtle);
 }
