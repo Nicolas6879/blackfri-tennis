@@ -334,6 +334,27 @@ body {
   color: var(--ink-muted);
 }
 
+.search-clear-btn {
+  border: none;
+  background: rgba(18, 18, 18, 0.08);
+  color: var(--ink-dark);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.search-clear-btn:hover {
+  background: var(--ink-black);
+  color: #FFFFFF;
+}
+
 .util-link {
   display: inline-flex;
   align-items: center;

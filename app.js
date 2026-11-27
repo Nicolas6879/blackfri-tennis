@@ -9703,6 +9703,138 @@ function cleanEmojiText(str) {
     .trim();
 }
 
+/* ==========================================================================
+   MOTOR DE BÚSQUEDA FLEXIBLE (SIN TILDES, MULTI-PALABRA Y TOLERANTE A TYPOS)
+   ========================================================================== */
+function normalizeSearchText(str) {
+  return String(str || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // Quita tildes (café -> cafe)
+    .toLowerCase()
+    .replace(/[_\-/'’.,()·:]+/g, ' ') // Convierte guiones, puntos y apóstrofes en espacios (D'Lites -> d lites, GEL-NYC -> gel nyc)
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function levenshteinDistance(a, b) {
+  if (a === b) return 0;
+  if (!a.length) return b.length;
+  if (!b.length) return a.length;
+  if (Math.abs(a.length - b.length) > 2) return 3;
+  const prev = new Array(b.length + 1);
+  const curr = new Array(b.length + 1);
+  for (let j = 0; j <= b.length; j++) prev[j] = j;
+  for (let i = 1; i <= a.length; i++) {
+    curr[0] = i;
+    for (let j = 1; j <= b.length; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      curr[j] = Math.min(prev[j] + 1, curr[j - 1] + 1, prev[j - 1] + cost);
+    }
+    for (let j = 0; j <= b.length; j++) prev[j] = curr[j];
+  }
+  return prev[b.length];
+}
+
+// Sinónimos útiles que la gente suele escribir distinto
+const SEARCH_ALIASES = {
+  'impermeable': ['waterproof', 'gtx', 'gore', 'outdry', 'storm'],
+  'impermeables': ['waterproof', 'gtx', 'gore', 'outdry', 'storm'],
+  'lluvia': ['waterproof', 'gtx', 'gore', 'outdry', 'storm'],
+  'agua': ['waterproof', 'gtx', 'gore', 'outdry'],
+  'nube': ['cloud', 'nimbus', 'bondi', 'clifton', 'fresh', 'foam', 'vomero', 'glycerin', 'ghost', 'triumph', 'invincible'],
+  'comodos': ['confort', 'cushion', 'foam', 'gel', 'arch', 'nimbus', 'bondi', 'clifton'],
+  'blancos': ['blanco', 'white', 'marfil'],
+  'negros': ['negro', 'black'],
+  'grises': ['gris', 'grey', 'gray'],
+  'azules': ['azul', 'blue'],
+  'verdes': ['verde', 'green'],
+  'rojos': ['rojo', 'red'],
+  'beiges': ['beige', 'crema', 'marfil', 'arena', 'taupe', 'nude'],
+  'nb': ['new', 'balance'],
+  'ua': ['under', 'armour']
+};
+
+const SEARCH_INDEX_CACHE = new Map();
+
+function getProductSearchIndex(p) {
+  let cached = SEARCH_INDEX_CACHE.get(p.id);
+  if (cached) return cached;
+  const rawFields = [
+    p.name,
+    cleanProductTitle(p),
+    p.brand,
+    p.desc,
+    p.materials,
+    p.storeName,
+    p.store,
+    p.verifiedSizes,
+    p.statusReason,
+    p.waterproof ? 'impermeable waterproof gtx goretex lluvia' : '',
+    p.category === 'A' ? 'futurista escultorico diseno color' : '',
+    p.category === 'B' ? 'facil limpieza cuero casual' : '',
+    p.category === 'C' ? 'maximo confort nube podologo' : '',
+    p.category === 'W' ? 'mujer chunky plataforma balenciaga triple s beige blanco marfil' : ''
+  ].join(' ');
+  const normalized = normalizeSearchText(rawFields);
+  const compact = normalized.replace(/\s+/g, '');
+  const words = normalized.split(' ').filter(Boolean);
+  cached = { normalized, compact, words };
+  SEARCH_INDEX_CACHE.set(p.id, cached);
+  return cached;
+}
+
+function tokenMatchesIndex(token, idx) {
+  if (!token) return true;
+  // 1. Coincidencia directa por subcadena (cubre prefijos, números, modelos pegados como "9060", "dn8", "dlites")
+  if (idx.normalized.includes(token) || idx.compact.includes(token)) return true;
+
+  // 2. Sinónimos (ej: "impermeable" -> encuentra GTX / OutDry / Waterproof)
+  const aliases = SEARCH_ALIASES[token];
+  if (aliases && aliases.some(a => idx.normalized.includes(a))) return true;
+
+  // 3. Tolerancia a errores de tipeo (typos): 1 letra en palabras >=4, 2 letras en palabras >=7
+  if (token.length >= 4) {
+    const maxDist = token.length >= 7 ? 2 : 1;
+    for (let i = 0; i < idx.words.length; i++) {
+      const w = idx.words[i];
+      if (w.length < 3) continue;
+      if (Math.abs(w.length - token.length) > maxDist) continue;
+      if (levenshteinDistance(token, w) <= maxDist) return true;
+      // También revisar prefijo aproximado (ej: "merrel" vs "merrell", "skecher" vs "skechers")
+      if (w.length > token.length && levenshteinDistance(token, w.slice(0, token.length)) <= 1) return true;
+    }
+  }
+  return false;
+}
+
+function matchesFlexibleSearch(p, rawQuery) {
+  const normQ = normalizeSearchText(rawQuery);
+  if (!normQ) return true;
+  const idx = getProductSearchIndex(p);
+  // Si el usuario pegó una frase larga o texto exacto sin espacios
+  const compactQ = normQ.replace(/\s+/g, '');
+  if (idx.normalized.includes(normQ) || (compactQ.length >= 4 && idx.compact.includes(compactQ))) {
+    return true;
+  }
+  // Dividir en palabras e ignorar conectores de relleno comunes si hay varias palabras
+  const STOPWORDS = new Set(['de', 'del', 'la', 'el', 'los', 'las', 'para', 'con', 'en', 'y', 'o', 'tenis', 'hombre', 'mujer', 'zapatos', 'zapatillas', 'lifestyle', 'running', 'original', 'originales', 'off']);
+  let tokens = normQ.split(' ').filter(Boolean);
+  if (tokens.length > 1) {
+    const meaningful = tokens.filter(t => !STOPWORDS.has(t));
+    if (meaningful.length > 0) tokens = meaningful;
+  }
+  // Cada palabra clave debe coincidir (directa, sinónimo o fuzzy con typo)
+  let matchedCount = 0;
+  for (let i = 0; i < tokens.length; i++) {
+    if (tokenMatchesIndex(tokens[i], idx)) matchedCount++;
+  }
+  // Si son 1-3 palabras, deben coincidir todas; si el usuario pegó un título larguísimo (4+ palabras), tolerar 1 palabra extraña de marketplace
+  if (tokens.length >= 4) {
+    return matchedCount >= tokens.length - 1;
+  }
+  return matchedCount === tokens.length;
+}
+
 function matchesVibe(p, vibe) {
   if (!vibe || vibe === 'all') return true;
   const pct = getDiscountPercent(p);
@@ -9769,7 +9901,7 @@ function renderBrandQuickDock() {
   });
 }
 
-function filterProducts() {
+function filterProducts(ignoreCatAndBrand = false) {
   return PRODUCTS.filter(p => {
     if (state.viewMode === 'liked') {
       if (!state.liked.has(p.id)) return false;
@@ -9787,24 +9919,22 @@ function filterProducts() {
       } else {
         if (isExpiredDeal(p) || isWomenDeal(p)) return false;
         if (state.onlyVerified && !p.verified) return false;
-        if (state.category !== 'ALL' && p.category !== state.category) return false;
+        if (!ignoreCatAndBrand && state.category !== 'ALL' && p.category !== state.category) return false;
       }
     }
 
-    if (state.category !== 'W' && !matchesVibe(p, state.vibe)) return false;
-    if (state.quickBrand !== 'ALL' && p.brand !== state.quickBrand) return false;
+    if (!ignoreCatAndBrand && state.category !== 'W' && !matchesVibe(p, state.vibe)) return false;
+    if (!ignoreCatAndBrand && state.quickBrand !== 'ALL' && p.brand !== state.quickBrand) return false;
 
     if (state.search.trim() !== '') {
-      const q = state.search.toLowerCase();
-      const hay = `${p.name} ${p.brand} ${p.desc} ${p.materials} ${p.storeName} ${p.verifiedSizes || ''} ${p.statusReason || ''}`.toLowerCase();
-      if (!hay.includes(q)) return false;
+      if (!matchesFlexibleSearch(p, state.search)) return false;
     }
 
     const priceCop = getPriceCop(p);
     if (state.maxPriceCop < 950000 && priceCop > state.maxPriceCop) return false;
 
     if (!state.stores.has(normalizeStoreGroup(p))) return false;
-    if (!state.brands.has(p.brand)) return false;
+    if (!ignoreCatAndBrand && !state.brands.has(p.brand)) return false;
 
     if (state.onlyWaterproof && !p.waterproof) return false;
     if (state.onlyFreeShipping && !p.freeShipping) return false;
@@ -9883,7 +10013,17 @@ function renderProducts() {
   const countText = document.getElementById('resultsCountText');
   const expiredBanner = document.getElementById('expiredBanner');
   const womenBanner = document.getElementById('womenBanner');
-  const filtered = filterProducts();
+  let filtered = filterProducts(false);
+  let broadenedFromCat = false;
+
+  // Si hay texto en el buscador y en la pestaña/marca actual dio 0 resultados, amplía automáticamente a todo el catálogo activo (hombre) para no dejar al usuario en 0 pares
+  if (filtered.length === 0 && state.search.trim() !== '' && state.viewMode === 'catalog' && state.category !== 'W' && state.category !== 'EXPIRED') {
+    const broad = filterProducts(true);
+    if (broad.length > 0) {
+      filtered = broad;
+      broadenedFromCat = true;
+    }
+  }
 
   state.currentFilteredIds = filtered.map(p => p.id);
 
@@ -9902,6 +10042,8 @@ function renderProducts() {
     countText.textContent = `${filtered.length} agotados / sin dto.`;
   } else if (state.category === 'W') {
     countText.textContent = `${filtered.length} pares mujer`;
+  } else if (broadenedFromCat) {
+    countText.textContent = `${filtered.length} pares (en todo el catálogo)`;
   } else {
     countText.textContent = `${filtered.length} pares`;
   }
@@ -10330,8 +10472,20 @@ function initEvents() {
     });
   });
 
-  document.getElementById('searchInput')?.addEventListener('input', e => {
+  const searchEl = document.getElementById('searchInput');
+  const clearSearchBtn = document.getElementById('btnClearSearch');
+  searchEl?.addEventListener('input', e => {
     state.search = e.target.value;
+    if (clearSearchBtn) clearSearchBtn.style.display = state.search.trim() ? 'inline-flex' : 'none';
+    renderProducts();
+  });
+  clearSearchBtn?.addEventListener('click', () => {
+    state.search = '';
+    if (searchEl) {
+      searchEl.value = '';
+      searchEl.focus();
+    }
+    clearSearchBtn.style.display = 'none';
     renderProducts();
   });
 
@@ -10462,6 +10616,8 @@ function initEvents() {
 
     const sInput = document.getElementById('searchInput');
     if (sInput) sInput.value = '';
+    const cBtn = document.getElementById('btnClearSearch');
+    if (cBtn) cBtn.style.display = 'none';
     if (priceRange) priceRange.value = 950000;
     if (priceLabel) priceLabel.textContent = 'Hasta $950.000 COP';
 

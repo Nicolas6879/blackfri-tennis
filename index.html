@@ -58,7 +58,8 @@
       <div class="archive-utils">
         <div class="inline-search">
           <svg class="ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-          <input type="text" id="searchInput" placeholder="Buscar silueta o marca..." />
+          <input type="text" id="searchInput" placeholder="Buscar silueta o marca..." autocomplete="off" />
+          <button type="button" class="search-clear-btn" id="btnClearSearch" aria-label="Limpiar búsqueda" style="display:none;">&times;</button>
         </div>
 
         <button class="util-link" id="btnShowLiked" title="Ver guardados">
@@ -234,7 +235,7 @@
       <div class="empty-box">
         <h3>Sin resultados para este filtro</h3>
         <p>Prueba seleccionando otra marca o restableciendo los filtros.</p>
-        <button class="btn-solid-dark" id="btnEmptyReset">Ver los 216 pares</button>
+        <button class="btn-solid-dark" id="btnEmptyReset">Ver todos los pares</button>
       </div>
     </div>
   </main>
